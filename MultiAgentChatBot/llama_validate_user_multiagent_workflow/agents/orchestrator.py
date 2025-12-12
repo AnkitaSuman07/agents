@@ -7,7 +7,7 @@ def handle_user(email,username,userinfo,input_code=NONE,delete_request=False):
     if delete_request:
         if delete_user(email):
             return generate_response(f"User {username} deleted successfully.")
-        return generate_response(f" no username found {username} and email : /"{email}/"")
+        return generate_response(f" no username found {username} and email : {email}")
 
     if is_existing_user(email):
         add_or_update_user(email,username,userinfo)
