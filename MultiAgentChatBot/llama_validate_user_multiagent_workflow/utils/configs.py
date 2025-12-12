@@ -1,17 +1,14 @@
-from dotenv import load_dotenv
 import os
 
-load_dotenv()
+REDIS_HOST = os.getenv("REDIS_HOST")
+REDIS_PORT = os.getenv("REDIS_PORT")
+REDIS_PASSWORD = os.getenv("REDIS_PASSWORD")
+REDIS_DB = os.getenv("REDIS_DB")
 
-class Config:
-    REDIS_HOST = os.getenv("REDIS_HOST")
-    REDIS_PORT = os.getenv("REDIS_PORT")
-    REDIS_PASSWORD = os.getenv("REDIS_PASSWORD")
-    REDIS_DB = os.getenv("REDIS_DB")
-    EMAIL_HOST = os.getenv("EMAIL_HOST")
-    EMAIL_PORT = os.getenv("EMAIL_PORT")
-    EMAIL_USERNAME = os.getenv("EMAIL_USERNAME")
-    EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
-    LLAMA_HF_INFERENCE_API_URL = os.getenv("HF_TOKEN")
-    OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-    
+EMAIL_HOST = os.getenv("EMAIL_HOST")
+EMAIL_PORT = os.getenv("EMAIL_PORT")
+EMAIL_USERNAME = os.getenv("EMAIL_USERNAME")
+EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
+
+LLAMA_HF_INFERENCE_API_URL = os.getenv("HF_TOKEN")
+OPENAI_API_KEY = os.getenv("OPENAI_A_
