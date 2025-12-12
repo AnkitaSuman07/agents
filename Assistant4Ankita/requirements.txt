@@ -1,0 +1,6 @@
+python-dotenv>=1.0.0
+openai>=0.4.9.2   # Legacy API works reliably
+requests>=2.32.3
+pypdf>=5.4.0
+gradio>=5.22.0
+
